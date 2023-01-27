@@ -1,0 +1,342 @@
+
+      .cover{
+        min-width: 300px;
+          background-image: url('convacation.jpg');
+          height: 600px;
+          background-size: cover;
+       
+      }
+      
+                           /*container*/
+      .container{
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+      
+      
+        h1{
+        
+          font-size: 70px;
+          color:white;
+          text-align: center;
+        }
+                    /*nav */
+        .nav-ber{
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          padding: 10px;
+        }
+          ul{ 
+            list-style-type:none;
+                    
+          }
+          ul li{
+        float: left;
+          }
+          ul li a{
+            display: inline-block;
+            text-decoration: none;
+            padding:20px ;
+            color: aliceblue;
+            font-size: 25px;
+            color: rgb(232, 21, 21);
+            font-weight: bold;
+          } 
+        nav{
+      padding-left: 60rem;
+        z-index: 1000;
+          
+        }
+        
+      ul li a::after{
+        content: '';
+        width: 0%;
+        height: 4px;
+        margin: auto;
+        display: block;
+        background:rgb(13, 13, 13);
+        transition: 0.5s;
+      }
+      ul li a:hover::after{
+        width: 100%;
+      }
+      
+      
+        /* ##Device = Low Resolution Tablets, Mobiles (Landscape)
+          ##Screen = B/w 481px to 767px
+            */
+               
+         @media (min-width: 481px) and (max-width: 900px) {
+                 
+          h1{
+            font-size: 50px;
+            margin-top: 100px;
+      
+           }
+         nav{
+           position: absolute;
+           top:70px;
+         right:0;
+        margin-left: 200px;
+          height:40vh ;
+                    }
+        nav ul li {
+        display: inline-block;
+            
+              }
+            nav ul li a{
+           float: left;
+            
+                }
+        .logo{
+        margin-left: -55px;
+        width: 150px;
+           }
+           .cover{
+            height: 400px;
+           }
+          }   
+         
+      
+      
+        /* ##Device = Most of the Smartphones Mobiles (Portrait)
+         ##Screen = B/w 320px to 479px
+       */
+       
+       @media (min-width: 320px) and (max-width: 480px) {
+         
+        h1{
+          font-size: 50px;
+          margin-top: 150px;
+         }
+       nav{
+         position: absolute;
+         top:70px;
+       right:0;
+      margin-left: 200px;
+        height:40vh ;
+                  }
+      nav ul li {
+      display: inline-block;
+          
+            }
+          nav ul li a{
+         float: left;
+          
+              }
+      .logo{
+      margin-left: -55px;
+      width: 150px;
+         }
+         .cover{
+          height: 500px;
+         }
+       
+       }
+    
+
+                    /*row-2*/
+.row-2{
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap ;
+    justify-content: space-around;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.col-left{
+  flex-basis: 50%;  
+
+}
+h3{
+ display: inline-block;
+ margin-left: 20px;
+ opacity: 0.5;
+}
+.icons-2{
+color: orangered;
+font-size: 25px;
+}
+
+.col-right{
+
+    flex-basis: 50%; 
+ }
+
+ .hero-btn{
+  position: relative;
+ top: 15px;
+ left:432px ;
+   text-decoration: none;
+ font-size: 20px;
+ color: #111010;
+ border:2px rgb(24, 23, 23) solid ;
+ padding: 5px 15px;
+ transition: 1s;
+ color: red;
+ transition: 0.5s;
+ }
+ .hero-btn:hover{
+   background: orangered;
+   color: #111010;
+ }
+ form{
+    max-width: 300px;
+   
+ }
+  input{
+    padding: 15px 50px;
+    margin-top: 10px;
+    text-align:left;
+    width: 400px;
+    font-size: 20px;
+  }
+ 
+    .massage{
+        height: 50px;
+    }
+
+
+    @media (min-width: 481px) and (max-width: 900px) {
+  .row-2{
+    margin-top:5rem;
+  }
+      .hero-btn
+      {
+        margin-left: -210px;
+      }
+       .hero-btn:hover{
+   background: orangered;
+   color: #111010;
+ }
+.col-right{
+  margin-left:200px ;
+}
+      .col-left{
+        
+        width: 300px;
+        margin-left: -400px;
+      }
+
+form{
+margin-left: -8px;
+}
+input{
+  padding:5px 10px ;
+  width: 280px;
+  font-size: 16px;
+}
+.icons-2{
+  color: orangered;
+  font-size: 15px;
+  }
+  h3{
+    font-size: 15px;
+margin-top: -20px;
+   
+  }
+
+    }
+
+
+     
+  @media (min-width: 320px) and (max-width: 480px) {
+ .hero-btn
+      {
+        margin-left: -230px;
+      }
+       .hero-btn:hover{
+   background: orangered;
+   color: #111010;
+ }
+      .col-left{
+        width: 200px;
+        margin-left: -200px;
+      }
+   
+        input{
+          width: 250px;
+          font-size: 15px;
+          padding:5px 10px ;
+          margin-top:10px ;
+          text-align: center;
+        }
+        .icons-2{
+          color: orangered;
+          font-size: 15px;
+          }
+          h3{
+            font-size: 15px;
+      margin-top: -20px;
+           
+          }
+    }
+                  /*About*/
+        
+                  .div{
+            
+                    margin: auto;
+                    text-align: center;
+                  }
+  h2{
+    margin-top: 150px;
+    font-size: 50px;
+    text-align: center;
+          }
+          .write-1{
+            max-width:800px ;
+         text-align: center;
+         margin-top: -10px;
+            }
+.icon{
+     margin-left: 47%;
+        margin-top: 20px;
+       margin-bottom: 30px;
+       }
+ .icons{
+     color:orangered;
+                  
+      font-size: 30px;
+        }
+ 
+      .h3-2{
+    
+        padding-bottom: 50px;
+        margin-left: 830px;
+        margin-top: -15px;
+     }
+                  
+@media (min-width: 481px) and (max-width: 900px) { 
+  .icon{
+                      
+    margin-left:270px;
+  }
+ .h3-2{
+    margin-left:255px;
+  }
+  .icons{
+    padding: 5px;
+  }
+  .div{
+    margin-top: 3rem;
+  }
+} 
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .icon{
+    margin-left:85px;
+  }
+ .h3-2{
+    margin-left:55px;
+  }
+  .icons{
+    padding: 5px;
+  }
+}                  
+                  
+                    
+
+  

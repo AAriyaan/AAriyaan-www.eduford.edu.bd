@@ -1,0 +1,453 @@
+
+      .cover{
+        min-width: 300px;
+          background-image: url('convacation.jpg');
+          height: 600px;
+          background-size: cover;
+       
+      }
+      
+                           /*container*/
+      .container{
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+      
+      
+        h1{
+        
+          font-size: 70px;
+          color:white;
+          text-align: center;
+        }
+                    /*nav */
+        .nav-ber{
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          padding: 10px;
+        }
+          ul{ 
+            list-style-type:none;
+                    
+          }
+          ul li{
+        float: left;
+          }
+          ul li a{
+            display: inline-block;
+            text-decoration: none;
+            padding:20px ;
+            color: aliceblue;
+            font-size: 25px;
+            color: rgb(232, 21, 21);
+            font-weight: bold;
+          } 
+        nav{
+      padding-left: 60rem;
+        z-index: 1000;
+          
+        }
+        
+      ul li a::after{
+        content: '';
+        width: 0%;
+        height: 4px;
+        margin: auto;
+        display: block;
+        background:rgb(13, 13, 13);
+        transition: 0.5s;
+      }
+      ul li a:hover::after{
+        width: 100%;
+      }
+      h2{
+        font-size: 46px;
+        color: rgb(22, 21, 21);
+       }
+      
+        /* ##Device = Low Resolution Tablets, Mobiles (Landscape)
+          ##Screen = B/w 481px to 767px
+            */
+               
+         @media (min-width: 481px) and (max-width: 900px) {
+                 
+          h1{
+            font-size: 50px;
+            margin-top: 100px;
+      
+           }
+         nav{
+           position: absolute;
+           top:70px;
+         right:0;
+        margin-left: 200px;
+          height:40vh ;
+                    }
+        nav ul li {
+        display: inline-block;
+            
+              }
+            nav ul li a{
+           float: left;
+            
+                }
+        .logo{
+        margin-left: -55px;
+        width: 150px;
+           }
+           .cover{
+            height: 400px;
+           }
+          }   
+         
+      
+      
+        /* ##Device = Most of the Smartphones Mobiles (Portrait)
+         ##Screen = B/w 320px to 479px
+       */
+       
+       @media (min-width: 320px) and (max-width: 480px) {
+         
+        h1{
+          font-size: 50px;
+          margin-top: 150px;
+         }
+       nav{
+         position: absolute;
+         top:70px;
+       right:0;
+      margin-left: 200px;
+        height:40vh ;
+                  }
+      nav ul li {
+      display: inline-block;
+          
+            }
+          nav ul li a{
+         float: left;
+          
+              }
+      .logo{
+      margin-left: -55px;
+      width: 150px;
+         }
+         .cover{
+          height: 500px;
+         }
+       
+       }
+
+
+                  /*row-2*/
+.row-2{
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap ;
+    justify-content: space-around;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.col-left{
+  flex-basis: 60%;  
+
+}
+h4{
+  font-size: 20px;
+margin-left: 25px;
+}
+h3{
+    opacity: 0.5;
+    max-width: 600px;
+}
+
+
+.col-right{
+  
+    flex-basis: 40%;  }
+
+  
+
+
+   @media (min-width: 481px) and (max-width: 900px) {
+      .row-2{
+        margin-top: 5rem;
+      }
+    .col-left img{
+        width: 500px;
+        height: 300px;
+      }   
+      h2{
+        margin-top: -2px;
+      } 
+      h3{
+        margin-top: -20px;
+      }   
+
+   }
+   @media (min-width: 320px) and (max-width: 480px) {
+    
+    .row-2{
+      margin-top: 5rem;
+    }
+    h2{
+     font-size: 30px;
+     margin-top: -2px;
+   } 
+   h3{
+     margin-top: -20px;
+   }  
+
+ .col-left img{
+width: 300px;
+height: 400px;
+ }
+.col-right{
+position:relative;
+top: 800px;
+}
+
+}
+
+
+                      /*table*/
+ table{
+max-width:500px ;
+width: 500px;
+margin-top: -790px;
+      }
+      tr td{
+        padding: 15px;
+        font-size: 25px;
+        opacity: 0.5;
+      }
+    tr th{  
+      position: relative;
+      left:20px;
+            font-size: 30px;
+        background: orangered;
+        text-align: center;
+
+      }
+ @media (min-width: 481px) and (max-width: 900px) {
+  table{
+    width: 500px;
+    position: relative;
+    top: 50rem;
+
+  }
+             .form{
+              position: relative;
+              top: 15rem;
+             }
+      
+          input{
+            width: 100px;
+            font-size: 15px;
+            padding:5px 10px ;
+            margin-top:10px ;
+            text-align: center;
+          }
+  
+          h4{
+            font-size:20px ;
+            margin-top: 200px;
+            margin-bottom: -0.5rem;
+          }
+  
+      }
+
+      
+@media (min-width: 320px) and (max-width: 480px) {
+
+  table{
+    width: 300px;
+
+  }
+     
+             
+             .form{
+              position: relative;
+              top: 15rem;
+             }
+      
+          input{
+            width: 100px;
+            font-size:15 px;
+            padding:5px 10px ;
+            margin-top:10px ;
+        
+          }
+  
+          h4{
+            font-size:20px ;
+            margin-top: 200px;
+              margin-bottom: -0.5rem;
+            
+          }
+          
+      
+          }  
+
+      
+
+
+                  /*About*/
+
+
+
+.div{
+  text-align: center;
+padding-top: 100px;
+}
+
+  .write-1{
+    max-width:800px ;
+    margin: auto;
+    }
+  .icon{
+  margin-left: 46%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  }
+  .icons{
+    color:orangered;
+  
+    font-size: 30px;
+  }
+
+  .h3-2{
+    padding-bottom: 50px;
+    margin-left: 800px;
+  }
+  
+  @media (min-width: 481px) and (max-width: 900px) { 
+  
+  
+    .icon{
+      
+      margin-left:270px;
+    }
+   .h3-2{
+      margin-left: 220px;
+    }
+    .icons{
+      padding: 5px;
+    }
+    .about{
+      position:relative;
+  top: 15rem;
+    }
+  } 
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+  
+    .icon{
+      margin-left:85px;
+    }
+   .h3-2{
+      margin-left:25px;
+    }
+    .icons{
+      padding: 5px;
+    }
+    .about{
+      position: relative;
+      top: 15rem;
+    }
+  } 
+
+
+                 /*Form*/
+
+  form{
+    max-width: 300px;
+   margin-left: 20px;
+   margin-bottom: 20px;
+  }
+  input{
+    font-size: 20px;
+    padding:10px 100px ;
+    margin-top:10px ;
+    text-align: center;
+  }
+   .comment{
+    height: 100px;
+    
+   }
+ 
+  .hero-btn{
+    position: relative;
+   top: -5px;
+   left:360px ;
+     text-decoration: none;
+   font-size: 20px;
+   color: #111010;
+   border:2px rgb(24, 23, 23) solid ;
+   padding: 5px 15px;
+   transition: 1s;
+   color: red;
+   }
+   .hero-btn:hover{
+     background: orangered;
+     color: #111010;
+   }
+   @media (min-width: 481px) and (max-width: 900px) {
+    .row-2{
+      margin-top: 5rem;
+    }
+  .col-left img{
+      width: 500px;
+      height: 300px;
+    }   
+   
+    h3{
+      margin-top: -20px;
+    }   
+
+    .hero-btn{
+      margin-left: -110px;
+      margin-top: 5rem;
+
+      
+         }
+            .hero-btn:hover{
+           background: orangered;
+           color: #111010;
+         }
+ }
+ @media (min-width: 320px) and (max-width: 480px) {
+
+ h3{
+   margin-top: -20px;
+ }  
+
+.col-left img{
+width: 300px;
+height: 400px;
+}
+.col-right{
+position:relative;
+top: 800px;
+}
+.hero-btn{
+  margin-left: -110px;
+  margin-top: 5rem;
+
+  
+     }
+        .hero-btn:hover{
+       background: orangered;
+       color: #111010;
+        }
+}
+
+
+
+  
+
+
+
+    
+ 
